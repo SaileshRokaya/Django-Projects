@@ -4,12 +4,13 @@ from django.shortcuts import render
 
 def homePage(request):
     data={
-        'title':'Home new Page'
+        'title':'Home new Page',
+        'bdata':"Welcome to SBRC Nepal"
     }
     return render(request, "index.html", data)
 
 def aboutUs(request):
-    return HttpResponse("<b>Welcome to SBRC Nepal</b>")
+    return HttpResponse("Welcome to SBRC Nepal")
 
 def Course(request):
     return HttpResponse("Welcome to SBRC Course")
