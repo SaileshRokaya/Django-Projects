@@ -3,7 +3,10 @@ from django.shortcuts import render
 
 
 def homePage(request):
-    return render(request, "index.html")
+    data={
+        'title':'Home new Page'
+    }
+    return render(request, "index.html", data)
 
 def aboutUs(request):
     return HttpResponse("<b>Welcome to SBRC Nepal</b>")
