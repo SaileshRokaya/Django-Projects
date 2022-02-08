@@ -5,7 +5,13 @@ from django.shortcuts import render
 def homePage(request):
     data={
         'title':'Home new Page',
-        'bdata':"Welcome to SBRC Nepal"
+        'bdata':"Welcome to SBRC Nepal",
+        'clist':['PHP','Java', 'Django'],
+        'student_details':[
+            {'name':'pradeep', 'phone':9813065077},
+            {'name':'Sailesh','phone':9843620536},
+            {'name':'Bikash','phone':981362025}
+        ]
     }
     return render(request, "index.html", data)
 
