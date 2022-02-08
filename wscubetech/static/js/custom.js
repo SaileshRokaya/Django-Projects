@@ -1,0 +1,10 @@
+$(window).scroll(function(){
+	if($(this).scrollTop()>50)
+	{
+		$(".navebar-default").addClass("other")
+	}
+	else
+	{
+		$(".navebar-default").removeClass("other")
+	}
+})

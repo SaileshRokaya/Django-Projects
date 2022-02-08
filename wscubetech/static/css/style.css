@@ -1,0 +1,93 @@
+body
+{
+	font-family: lato;
+}
+h2
+{
+	font-weight: bold;
+}
+#home
+{
+	background: #040404;
+	color: #fff;
+	min-height: 650px;
+	padding-top: 7em;
+}
+
+#home h1
+{
+	font-size: 55px;
+	font-weight: bold;
+}
+.navbar-default
+{
+	background: #040404;
+	padding: 20px 0;
+	border: 0px;
+	transition: 1s;
+}
+.navbar-default .navbar-brand
+{
+	font-size: 25px;
+	color: #fff;
+	font-weight: 900;
+
+}
+.navbar-default .navbar-brand:hover
+{
+	color: #fff;
+}
+.navbar-default .navbar-nav > li > a
+{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: .1em;
+}
+.navbar-default .navbar-nav > li > a:hover
+{
+	color: #0078ff;
+}
+#about
+{
+	min-height: 450px;
+	padding-top: 4em;
+}
+#about span
+{
+	font-size: 55px;
+	color: #04c2c9;
+}
+
+#about p
+{
+	color :#999;
+}
+.other
+{
+	background: rgba(0,0,0,0.7);
+	padding: 10px 0;
+}
+#banner
+{
+	background: url(../img/banner.jpg);
+	min-height: 300px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#services span
+{
+	font-size: 55px;
+	color: #04c2c9;
+} 
+#services p
+{
+	color :#999;
+}
+#footer
+{
+	background: #499dfc;
+	min-height: 70px;
+	padding-top: 23px;
+}

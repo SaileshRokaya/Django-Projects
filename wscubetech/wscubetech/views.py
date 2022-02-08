@@ -3,18 +3,18 @@ from django.shortcuts import render
 
 
 def homePage(request):
-    data={
-        'title':'Home new Page',
-        'bdata':"Welcome to SBRC Nepal",
-        'clist':['PHP','Java', 'Django'],
-        'numbers':[10,20,30,40,50],
-        'student_details':[
-            {'name':'pradeep', 'phone':9813065077},
-            {'name':'Sailesh','phone':9843620536},
-            {'name':'Bikash','phone':981362025}
-        ]
-    }
-    return render(request, "index.html", data)
+    # data={
+    #     'title':'Home new Page',
+    #     'bdata':"Welcome to SBRC Nepal",
+    #     'clist':['PHP','Java', 'Django'],
+    #     'numbers':[10,20,30,40,50],
+    #     'student_details':[
+    #         {'name':'pradeep', 'phone':9813065077},
+    #         {'name':'Sailesh','phone':9843620536},
+    #         {'name':'Bikash','phone':981362025}
+    #     ]
+    # }
+    return render(request, "index.html")
 
 def aboutUs(request):
     return HttpResponse("Welcome to SBRC Nepal")
