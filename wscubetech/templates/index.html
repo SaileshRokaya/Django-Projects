@@ -1,53 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Sailesh's Portfolio</title>
-
-    <!-- Bootstrap -->
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="/static/img/logo.png" />
-  </head>
-  <body>
-
-    <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Sailesh's Portfolio</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
+{% include "header.html" %}
     <section id="home">
       <div class="container banner text-center">
         <img src="/static/img/slid.jpg" alt="logo" class="img-circle" height="250" width="250">
@@ -198,17 +149,4 @@ If not found doing above things you can always find me sleeping.😴 </p>
     </div>
     </section>
 
-    <section id="footer">
-     <p class="copyright text-center">© 2021 
-      <strong>saileshrokaya123@gmail.com</strong> All Rights Reserved<br>
-      Designed by <a href="#home"> Sailesh Rokaya </a>
-    </p>
-    </section>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/custom.js"></script>
-  </body>
-</html>
+    {% include "footer.html" %}
