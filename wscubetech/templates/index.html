@@ -1,4 +1,6 @@
-{% include "header.html" %}
+{% extends 'base.html' %}
+{% block content %}
+
     <section id="home">
       <div class="container banner text-center">
         <img src="/static/img/slid.jpg" alt="logo" class="img-circle" height="250" width="250">
@@ -149,4 +151,4 @@ If not found doing above things you can always find me sleeping.😴 </p>
     </div>
     </section>
 
-    {% include "footer.html" %}
+    {% endblock %}
